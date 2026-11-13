@@ -370,9 +370,10 @@ def main():
         QUIET = (m[4] or "").lower() == "-quiet"    # (the suffix sets it, so a quiet build can't be mislabelled)
         name = f"aisling-{a.release}.fwsc"
     if FX:
-        # AISLING FX: its own line of identities, FM-1_3539 + major (one digit), minor, patch; a build that is not a
-        # release is FM-1_353900000
-        PRODUCT = "FM-1_3539" + PRODUCT[-5:]
+        # AISLING FX: its own line of identities, FM-1_391 (F, X and 1 on a phone's keys) + major, minor, patch as
+        # AISLING's (1.0 -> FM-1_391010000; a build that is not a release is FM-1_391000000). Not FM-1_353: The
+        # Firmware Hub knows AISLING by FM-1_353 and six digits, and would take FX-1 for it
+        PRODUCT = "FM-1_391" + PRODUCT[-6:]
         name = name.replace("aisling-", "aislingfx-") if a.release else "aislingfx-dev.fwsc"
     fm1pkg_make.SDK = a.sdk
     for rel, sha in SDK_SHA256.items():          # fail early without the SDK
