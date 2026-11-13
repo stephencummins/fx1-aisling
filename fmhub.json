@@ -3,5 +3,6 @@
   "author": "CU_STE",
   "kinds": ["other"],
   "image": "docs/card-fx1.png",
-  "color": "#E8B034"
+  "color": "#E8B034",
+  "sounds": "own: the visualiser's demo recording is AISLING itself playing Skellig, rendered from its own code; the firmware uses no samples"
 }
