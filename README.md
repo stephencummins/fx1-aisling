@@ -102,3 +102,5 @@ for the voices this build leaves out. GPL-3.0-only; see [LICENSING.md](LICENSING
 
 M-VAVE and FM-1 are trademarks of their owners. AISLING FX-1 is not affiliated with M-VAVE, Hügelton Instruments or
 NACHTFAHRT's author.
+
+You can also try fx1 Aisling in the browser, no flashing needed, in the free community [FM-1 Emulator](https://fm1-emulator.atst.tools/).
