@@ -2,7 +2,7 @@
 
 <img src="docs/card-fx1.png" width="240" height="240" alt="AISLING FX-1: a gold 8-bit harp on green, with FX beside it">
 
-**[Download 1.0](https://github.com/stephencummins/fx1-aisling/releases/tag/v1.0)** · **[Manual](docs/FX1.md)** ·
+**[Download 1.1](https://github.com/stephencummins/fx1-aisling/releases/tag/v1.1)** · **[Manual](docs/FX1.md)** ·
 **[Controls](docs/img/fx1-controls.svg)** · **[AISLING](https://aisling.stephen8n.com/)**
 
 By CU_STE · [www.stephen8n.com](https://www.stephen8n.com)
@@ -18,9 +18,12 @@ the computer can record it. It needs no driver: it is a standard USB audio devic
 It is [AISLING](https://github.com/stephencummins/fm1-aisling) with its voices taken out: no harps, no drone, no flute,
 only what the computer sends. The same source builds both; `--fx` builds this one.
 
-**Status: 1.0, the first release.** FX-1 has run on one FM-1 (the first flash chip) with a Mac playing through it:
+**Status: 1.1.** FX-1 1.0 has run on one FM-1 (the first flash chip) with a Mac playing through it:
 no gaps, no lost packets, and it sounds right. The 1.0 package has gone on over AISLING 1.4 and over the stock
-firmware (V16), and AISLING 1.4 back over it. Not yet known: the latency, a long session, a newer
+firmware (V16), and AISLING 1.4 back over it. 1.1 is 1.0 with a light screen to choose (the Journey page's Screen:
+Dark, or Light, the same colours deeper, on white; saved) and the knob strip's dividers moved clear of the names;
+the sound is 1.0's. 1.1's own package has not been on an FM-1 yet; its screen changes have, in AISLING 1.4.1.
+Not yet known: the latency, a long session, a newer
 FM-1, other computers. The [manual](docs/FX1.md#8-what-has-been-tried) keeps the list.
 
 **Saved settings.** FX-1 is AISLING underneath, so it saves where AISLING does, in AISLING's own format, and reads
@@ -54,17 +57,18 @@ and the stream's counts. The [manual](docs/FX1.md) has every control, key and co
 
 ## Installing
 
-Download `aislingfx-1.0.fwsc` from [the 1.0 release](https://github.com/stephencummins/fx1-aisling/releases/tag/v1.0)
+Install it from Chrome or Edge on [its install page](https://aisling.stephen8n.com/fx1/install/). Or download
+`aislingfx-1.1.fwsc` from [the 1.1 release](https://github.com/stephencummins/fx1-aisling/releases/tag/v1.1)
 and install it over AISLING, another firmware or the stock one with the command-line installer, which is in this
 repository (Python 3 with mido and python-rtmidi; the FM-1 connected by USB):
 
 ```
 git clone https://github.com/stephencummins/fx1-aisling
 pip3 install mido python-rtmidi
-python3 fx1-aisling/tools/fm1_install.py aislingfx-1.0.fwsc
+python3 fx1-aisling/tools/fm1_install.py aislingfx-1.1.fwsc
 ```
 
-Its identity is FM-1_391 and six digits (1.0 is FM-1_391010000), so The Firmware Hub and AISLING's web installer
+Its identity is FM-1_391 and six digits (1.1 is FM-1_391010100), so The Firmware Hub and AISLING's web installer
 don't take it for AISLING. To go back, install AISLING from its [web installer](https://aisling.stephen8n.com/install/),
 or the stock firmware ([Back to stock](https://aisling.stephen8n.com/install/#stock)).
 
@@ -74,7 +78,7 @@ The toolchain is AISLING's, NACHTFAHRT's and DUB-1's (see [BUILDING.md](BUILDING
 
 ```
 tests/run_tests.sh      # the engine, the platform, the app in a simulator, FX-1's own tests
-./build.sh --fx         # build/aislingfx-dev.fwsc (--release 1.0 --fx: build/aislingfx-1.0.fwsc)
+./build.sh --fx         # build/aislingfx-dev.fwsc (--release 1.1 --fx: build/aislingfx-1.1.fwsc)
 ./build.sh              # without --fx: AISLING, byte for byte
 ```
 
