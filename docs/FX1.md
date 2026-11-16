@@ -13,7 +13,7 @@ sound cleanly through its effects; it has gone on over AISLING and over the stoc
 what each control does was measured in AISLING's simulator. 1.1's own package has not been on an FM-1 yet: its screen
 changes have, in AISLING 1.4.1 (see [What has been tried](#8-what-has-been-tried)). Its package is on
 [the 1.1 release](https://github.com/stephencummins/fx1-aisling/releases/tag/v1.1), and it installs from Chrome or
-Edge on [its install page](https://aisling.stephen8n.com/fx1/install/).
+Edge on [its install page](https://aisling.stephen8n.com/fx1/install/) (FX-1 has so far gone on from the command line).
 
 AISLING FX-1 is by CU_STE ([www.stephen8n.com](https://www.stephen8n.com)), from AISLING's own source, in a repository
 of its own: [github.com/stephencummins/fx1-aisling](https://github.com/stephencummins/fx1-aisling). GPL-3.0. It is
@@ -39,10 +39,16 @@ not affiliated with M-VAVE.
 
 ## 1. Putting it on the FM-1
 
-Install it from Chrome or Edge on [its install page](https://aisling.stephen8n.com/fx1/install/), or download
-`aislingfx-1.1.fwsc` from [the 1.1 release](https://github.com/stephencummins/fx1-aisling/releases/tag/v1.1)
-and put it on with the command-line installer, which is in the source and needs Python 3 with mido and
-python-rtmidi. Connect the FM-1 by USB first. It goes on over AISLING, over another firmware or over the stock one:
+It goes on over AISLING, over another firmware or over the stock one, in either of two ways.
+
+**From Chrome or Edge**, on [FX-1's install page](https://aisling.stephen8n.com/fx1/install/): connect the FM-1 to the
+computer with a USB data cable, press Install, allow the page to use MIDI devices, and leave the cable in until it says
+Done. It is AISLING's web installer with FX-1's package; FX-1 has not yet been put on with it, only from the command
+line.
+
+**From the command line**: download `aislingfx-1.1.fwsc` from
+[the 1.1 release](https://github.com/stephencummins/fx1-aisling/releases/tag/v1.1) and put it on with the installer in
+the source, which needs Python 3 with mido and python-rtmidi. Connect the FM-1 by USB first:
 
 ```
 git clone https://github.com/stephencummins/fx1-aisling
@@ -211,6 +217,8 @@ AISLING's pass on 1.1.
 - The keys' effects on music, by ear, on the FM-1.
 - A save in FX-1 on the FM-1, then AISLING reading it (the source says it takes FX-1's settings as the piece's).
 - A newer FM-1 (the second flash chip), and installing over the stock V15.
+- Installing from [the install page](https://aisling.stephen8n.com/fx1/install/) (it does what `tools/fm1_install.py`
+  does, and is how AISLING is installed).
 
 ## 9. Going back to AISLING
 
