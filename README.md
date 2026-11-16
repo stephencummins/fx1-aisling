@@ -22,7 +22,7 @@ only what the computer sends. The same source builds both; `--fx` builds this on
 no gaps, no lost packets, and it sounds right. The 1.0 package has gone on over AISLING 1.4 and over the stock
 firmware (V16), and AISLING 1.4 back over it. 1.1 is 1.0 with a light screen to choose (the Journey page's Screen:
 Dark, or Light, the same colours deeper, on white; saved) and the knob strip's dividers moved clear of the names;
-the sound is 1.0's. 1.1 has gone on one FM-1 over AISLING 1.4.1 and its screen looked right; sound has not been played through 1.1 yet.
+the sound is 1.0's. 1.1 has gone on one FM-1 over AISLING 1.4.1 its screen looked right, and a computer's sound played through its effects.
 Not yet known: the latency, a long session, a newer
 FM-1, other computers. The [manual](docs/FX1.md#8-what-has-been-tried) keeps the list.
 
