@@ -1,5 +1,5 @@
 {
-  "what": "Turns the FM-1 into an effects box. Sound from a computer, sent over USB, comes out of its socket through AISLING's live effects: reverb, shimmer, echo, phaser, drive, crush and more, held by key or CC. Knobs set the filter, sends and dry, and the wet sound goes back up the cable.",
+  "what": "Guitar effects from an FM-1. A guitar, or any sound a computer plays, goes in over USB and comes out of its socket through AISLING's live effects: reverb, shimmer, echo, phaser, drive, crush and more, held by key or CC. Knobs set the filter, sends and dry.",
   "author": "CU_STE",
   "kinds": ["other"],
   "image": "docs/card-fx1.png",
