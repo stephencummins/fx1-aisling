@@ -23,8 +23,9 @@ no gaps, no lost packets, and it sounds right. The 1.0 package has gone on over 
 firmware (V16), and AISLING 1.4 back over it. 1.1 is 1.0 with a light screen to choose (the Journey page's Screen:
 Dark, or Light, the same colours deeper, on white; saved) and the knob strip's dividers moved clear of the names;
 the sound is 1.0's. 1.1 has gone on one FM-1 over AISLING 1.4.1 its screen looked right, and a computer's sound played through its effects.
-Not yet known: the latency, a long session, a newer
-FM-1, other computers. The [manual](docs/FX1.md#8-what-has-been-tried) keeps the list.
+1.1 has also gone on a newer FM-1 (the second flash chip, `0xB36014`) over AISLING 1.5, and works there; AISLING 1.5
+went back over it with its saved pieces and its sound pack as they were.
+Not yet known: the latency, a long session, other computers. The [manual](docs/FX1.md#8-what-has-been-tried) keeps the list.
 
 **Saved settings.** FX-1 is AISLING underneath, so it saves where AISLING does, in AISLING's own format, and reads
 what AISLING saved: it starts on the piece AISLING was playing, with that piece's echo and reverb, and a save in FX-1
